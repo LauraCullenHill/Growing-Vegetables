@@ -4,27 +4,27 @@ import Header from "@/components/shared/header";
 import { useRouter } from "next/router"
 import { useEffect, useState } from "react";
 import { copytoclipboard } from "npm install --save react-copy-to-clipboard"
-export default function SingleBook() {
+export default function SingleVeg() {
     const router = useRouter();
-    const [book, setBook] = useState(null);
-    const { bookId } = router.query;
+    const [veg, setVeg] = useState(null);
+    const { vegId } = router.query;
     
     useEffect(() => {
-        if (!bookId) return;
+        if (!vegId) return;
 
-        getBook(bookId);
-    }, [bookId]);
+        getVeg(vegId);
+    }, [vegId]);
 
-    const getBook = async (id) => {
-        const response = await fetch(`/api/book-by-id?id=${id}`);
+    const getVeg = async (id) => {
+        const response = await fetch(`/api/veg-by-id?id=${id}`);
         const data = await response.json();
-        const { book } = data;
-        setBook(book);
+        const { veg } = data;
+        setVeg(veg);
     }
 
-    console.log(book);
+    console.log(veg);
 
-    if (!book) {
+    if (!veg) {
         return (
             <div>Loading...</div>
         )
@@ -33,20 +33,18 @@ export default function SingleBook() {
 
     return (
         <div className="w-full">
-            <Header name={book.title} />
+            <Header name={veg.title} />
 
             <Hero
-                imgUrl={book.imgUrl}
-                title={book.title}
-                subtitle={book.author}
+                imgUrl={veg.imgUrl}
+                title={veg.title}
+                subtitle={veg.author}
             />
 
             <Content>
                 <div className="w-full flex flex-col">
                     <div classNmae="">
-                        <copytoclipboard
-                    </div>
-                    
+                        <copytoclipboard text=(veg.);
                     <button
                         className= ""
                         type="button"
@@ -56,8 +54,8 @@ export default function SingleBook() {
 
             </Content>
             <Footer
-                title="Next book"
-                href={`/single-book/${+book.id + 1}`}
+                title="Next veg"
+                href={`/single-veg/${+veg.id + 1}`}
             />
         </div>
     )
