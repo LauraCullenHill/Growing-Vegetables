@@ -1,9 +1,11 @@
 import Hero from "@/components/home/hero";
+import Content from "@/components/shared/content";
 import Footer from "@/components/shared/footer";
 import Header from "@/components/shared/header";
 import { useRouter } from "next/router"
 import { useEffect, useState } from "react";
-import { copytoclipboard } from "npm install --save react-copy-to-clipboard"
+import { CopyToClipboard } from 'react-copy-to-clipboard';
+
 export default function SingleVeg() {
     const router = useRouter();
     const [veg, setVeg] = useState(null);
@@ -33,26 +35,35 @@ export default function SingleVeg() {
 
     return (
         <div className="w-full">
-            <Header name={veg.title} />
+            <Header name={veg.type} />
 
             <Hero
-                imgUrl={veg.img_Url}
-                title={veg.title}
-                subtitle={veg.author}
+                imgUrl={veg.img_url}
+                title={veg.type}
+                subtitle={veg.variety}
             />
 
             <Content>
                 <div className="w-full flex flex-col">
-                    <div classNmae="">
-                        <copytoclipboard text=(veg.);
-                    <button
-                        className= ""
-                        type="button"
-                    >
-                        Copy link to amazon
-                    </button>
 
+                    <div className="">
+                        <CopyToClipboard text={veg.linkToPurchase}>
+                            <button
+                                className="bg-blue-500 text-white px-4 py-2 rounded-lg"
+                                type="button"
+                            >
+                                Copy link to Amazon
+                            </button>
+                        </CopyToClipboard>
+                    </div>
+
+                    <a href={veg.linkToPurchase} target="_blank">
+                        Buy on Amazon
+                    </a>
+
+                </div>
             </Content>
+
             <Footer
                 title="Next veg"
                 href={`/single-veg/${+veg.id + 1}`}
