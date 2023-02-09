@@ -1,3 +1,4 @@
+import Link from "next/Link";
 import { useState } from "react";
 
 export default function VegItem({ veg }) {
@@ -5,6 +6,9 @@ export default function VegItem({ veg }) {
 
     const handleLike = () => {
         let newLikes = likes + 1;
+        const id = veg.id;
+        const response = await fetch(`/api/increase-likes?id=${id}&likes=${newLikes}`);
+        const data = await response.json();
         setLikes(newLikes);
     }
 
