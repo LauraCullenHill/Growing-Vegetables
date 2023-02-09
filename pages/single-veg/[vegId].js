@@ -36,7 +36,7 @@ export default function SingleVeg() {
             <Header name={veg.title} />
 
             <Hero
-                imgUrl={veg.imgUrl}
+                imgUrl={veg.img_Url}
                 title={veg.title}
                 subtitle={veg.author}
             />
