@@ -4,20 +4,20 @@ export default function handler(req, res) {
     const vegs = [
         {
             id: "1",
-            type: "The Hobbit",
-            variety: "J.R.R. Tolkien",
+            type: "Tomatoe",
+            variety: "San Marco",
             imgUrl: "/assets/1.png"
         },
         {
             id: "2",
-            type: "The Fellowship of the Ring",
-            variety: "J.R.R. Tolkien",
+            type: "Cucumber",
+            variety: "",
             imgUrl: "/assets/2.png"
         },
         {
             id: "3",
-            type: "Born a Crime",
-            variety: "Trevor Noah",
+            type: "Spinach",
+            variety: "",
             imgUrl: "/assets/3.png"
         }
     ];

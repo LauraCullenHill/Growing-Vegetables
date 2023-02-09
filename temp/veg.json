@@ -1,0 +1,20 @@
+[
+    {
+        "id": "1",
+        "type": "Tomatoe",
+        "variety": "San Marco",
+        "imgUrl": "/assets/1.png"
+    },
+    {
+        "id": "2",
+        "type": "Cucumber",
+        "variety": "",
+        "imgUrl": "/assets/2.png"
+    },
+    {
+        "id": "3",
+        "type": "Spinach",
+        "variety": "",
+        "imgUrl": "/assets/3.png"
+    }
+]
