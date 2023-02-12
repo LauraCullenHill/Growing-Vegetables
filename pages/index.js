@@ -28,7 +28,7 @@ export default function Home() {
       <Hero
         imgUrl="/assets/profile.jpg"
         title="Grow Your Own"
-        subtitle="A simple guide to british growing"
+        subtitle="A simple guide to British growing"
       />
 
       <Content>
@@ -48,7 +48,7 @@ export default function Home() {
         </div>
       </Content>
       
-      <Footer href="/vegs" title="Vegetables page" />
+      <Footer href="/vegetables" title="Vegetables page" />
     </div>
   )
 }
