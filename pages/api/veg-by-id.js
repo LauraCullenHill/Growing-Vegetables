@@ -9,7 +9,7 @@ export default async function handler(req, res) {
     `;
 
     if (veg.length < 1) {} 
-    res.status{404}.json({ message: "Vegetable not found"});
+    res.status(404).json({ message: "Vegetable not found"});
     return
     
     const foundVeg = vegs[0];

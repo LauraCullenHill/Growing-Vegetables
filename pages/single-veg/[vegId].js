@@ -49,16 +49,16 @@ export default function SingleVeg() {
                     <div className="">
                         <CopyToClipboard text={veg.linkToPurchase}>
                             <button
-                                className="bg-blue-500 text-white px-4 py-2 rounded-lg"
+                                className="bg-white-500 text-black px-4 py-2 rounded-lg"
                                 type="button"
                             >
-                                Copy link to Amazon
+                                Copy link to Purchase
                             </button>
                         </CopyToClipboard>
                     </div>
 
                     <a href={veg.linkToPurchase} target="_blank">
-                        Buy on Amazon
+                        Buy online
                     </a>
 
                 </div>

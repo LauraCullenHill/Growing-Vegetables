@@ -4,7 +4,7 @@ import { useState } from "react";
 export default function VegItem({ veg }) {
     const [likes, setLikes] = useState(0);
 
-    const handleLike = () => {
+    const handleLike = async () => {
         let newLikes = likes + 1;
         const id = veg.id;
         const response = await fetch(`/api/increase-likes?id=${id}&likes=${newLikes}`);
