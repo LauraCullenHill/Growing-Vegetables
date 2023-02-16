@@ -1,4 +1,4 @@
-import VegGrid from "/components/vegs/veg-grid/index";
+import VegGrid from "/components/vegs/veg-grid";
 import Content from "/components/shared/content";
 import Footer from "/components/shared/footer";
 import Header from "/components/shared/header";

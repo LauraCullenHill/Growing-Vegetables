@@ -1,7 +1,7 @@
-import VegItem from "/veg-grid/veg-item";
+import VegItem from "./veg-item";
 import { useEffect, useState } from "react";
 
-export default function VegGrid() {
+export default function VegsGrid() {
     const [vegs, setVegs] = useState([]);
 
     useEffect(() => {
@@ -9,7 +9,7 @@ export default function VegGrid() {
     }, []);
 
     const getVegs = async () => {
-        const response = await fetch(`/pages/api/vegs`);
+        const response = await fetch(`/api/vegs`);
         const data = await response.json();
         setVegs(data);
     }

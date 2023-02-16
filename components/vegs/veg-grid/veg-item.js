@@ -2,7 +2,7 @@ import Link from "next/link";
 import { useState } from "react";
 
 export default function VegItem({ veg }) {
-    const [likes, setLikes] = useState(0);
+    const [likes, setLikes] = useState(+veg.likes);
 
     const handleLike = async () => {
         let newLikes = likes + 1;
@@ -15,9 +15,11 @@ export default function VegItem({ veg }) {
 
     return (
         <div className="border rounded-lg p-4">
-            <img src={vegs.imgUrl} className="rounded-lg" />
-            <p className="text-xl font-medium">{vegs.type}</p>
-            <p className="text-gray-700">{vegs.variety}</p>
+            <img src={veg.img_url} className="rounded-lg" />
+            <Link href={`/single-veg/${veg.id}`} className="text-xl font-manrope">
+                {veg.title}
+            </Link>
+            <p className="text-gray-700">{veg.variety}</p>
             <button
                 onClick={handleLike}
                 type="button"

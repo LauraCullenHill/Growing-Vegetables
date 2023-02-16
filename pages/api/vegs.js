@@ -1,8 +1,7 @@
-import sql from "/components/utils/postgres"
+import sql from "@/utils/postgres";
 
 export default async function handler(req, res) {
-
-    const vegs = await sql `
+    const vegs = await sql`
         select * from vegs
     `;
 
