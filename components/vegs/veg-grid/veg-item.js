@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { useState } from "react";
 
-export default function VegItem({ veg }) {
+export default function VegsItem({ veg }) {
     const [likes, setLikes] = useState(0);
 
     const handleLike = async () => {

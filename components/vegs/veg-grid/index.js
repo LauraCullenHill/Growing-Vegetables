@@ -1,7 +1,7 @@
 import VegItem from "./veg-item";
 import { useEffect, useState } from "react";
 
-export default function VegsGrid() {
+export default function VegGrid() {
     const [vegs, setVegs] = useState([]);
 
     useEffect(() => {
