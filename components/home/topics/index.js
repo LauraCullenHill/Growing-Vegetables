@@ -3,8 +3,8 @@ import topics from "./topics";
 export default function Topics() {
     return (
         <div className="w-full flex flex-col mt-5 mb-10">
-            <h3 className="font-medium text-2xl">
-                Each vegatable page identifies:
+            <h3 className="font-manrope text-2xl">
+                Each vegetable page identifies:
             </h3>
             <div>
                 <ul className="list-disc">
