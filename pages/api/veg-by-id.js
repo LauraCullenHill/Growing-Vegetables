@@ -3,7 +3,13 @@ import sql from "@/components/utils/postgres";
 export default async function handler(req, res) {
     const id = req.query.id;
 
-    const vegs = sql `
+    if (id === null || id=== undefined) {
+        return "Mising id"
+    }
+
+    // ?id=1
+
+    const vegs = await sql `
         select = from vegs
         where id = ${id}
     `;
