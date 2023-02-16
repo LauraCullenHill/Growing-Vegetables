@@ -16,7 +16,7 @@ export default async function handler(req, res) {
         where id = ${id}
     `;
 
-    if (vegs.length < 1) {} 
+    if (vegs.length < 1) {
         res.status(404).json({ message:"Vegetable not found"});
         return;
     }
