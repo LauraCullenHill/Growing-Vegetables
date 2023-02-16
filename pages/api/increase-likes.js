@@ -7,7 +7,7 @@ export default async function handler(req, res) {
 
 )
     const vegs = await sql`
-        update books
+        update vegs
         set likes = ${likes}
         where id = ${id}
     `;
