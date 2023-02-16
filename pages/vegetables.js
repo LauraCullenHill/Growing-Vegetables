@@ -2,7 +2,6 @@ import VegsGrid from "@/components/vegs/veg-grid";
 import Content from "@/components/shared/content";
 import Footer from "@/components/shared/footer";
 import Header from "@/components/shared/header";
-import Link from "next/link";
 
 export default function VegsPage() {
     return (
