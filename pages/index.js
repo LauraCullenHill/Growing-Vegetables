@@ -12,7 +12,7 @@ export default function Home() {
   const [state, setState] = useState({});
 
   const handleClick = () => {
-    alert("you clicked the button!");
+    alert("It's me, Hi!");
 
     // make API call
 
@@ -47,7 +47,7 @@ export default function Home() {
         </div>
       </Content>
       
-      <Footer href="/vegetables" title="Vegetabless page" />
+      <Footer href="/pages/vegetables" title="Vegetables page" />
     </div>
   )
 }
