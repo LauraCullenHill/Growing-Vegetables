@@ -8,8 +8,8 @@ import { CopyToClipboard } from 'react-copy-to-clipboard';
 
 export default function SingleVeg() {
     const router = useRouter();
-    const [book, setBook] = useState(null);
-    const { bookId } = router.query;
+    const [veg, setVeg] = useState(null);
+    const { vegId } = router.query;
     
     useEffect(() => {
         if (!vegId) return;
