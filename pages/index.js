@@ -24,6 +24,7 @@ export default function Home() {
 
       <Hero
         imgUrl="/public/assets/garden.jpg"
+        title= "Welcome to"
         subtitle="A simple guide to British growing"
       />
 
@@ -38,4 +39,3 @@ export default function Home() {
       <Footer href="/vegetables" title="Vegetables page" />
     </div>
   )
-}
