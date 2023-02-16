@@ -39,7 +39,7 @@ export default function Home() {
 
          <div>
           <button
-              className="bg-green-500 px-2 py-1 rounded"
+              className="bg-green-800 px-2 py-1 rounded"
               onClick={handleClick}
             >
               Click me!!!
