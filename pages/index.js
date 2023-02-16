@@ -47,7 +47,7 @@ export default function Home() {
         </div>
       </Content>
       
-      <Footer href="/pages/vegetables" title="Vegetables page" />
+      <Footer href="/vegetables" title="Vegetables" />
     </div>
   )
 }
