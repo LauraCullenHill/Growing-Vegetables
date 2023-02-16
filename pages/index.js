@@ -22,7 +22,7 @@ export default function Home() {
 
   return (
     <div className="w-full">
-      <Header name="Home" />
+      <Header name="Grow Your Own" />
 
       <Hero
         imgUrl="/assets/garden.jpg"
