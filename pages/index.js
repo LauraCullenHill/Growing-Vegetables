@@ -7,25 +7,27 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import { useState } from "react";
 
-
-
 export default function Home() {
   const router = useRouter();
   const [state, setState] = useState({});
 
+  const handleClick = () => {
+    alert("you clicked the button!");
 
-    router.push("/vegetables");
-    // navigate to the vegetabless page
+    // make API call
+
+    router.push("/vegs");
+    // navigate to the books page
   }
 
   return (
     <div className="w-full">
-      <Header name="Grow Your Own" />
+      <Header name="Home" />
 
       <Hero
-        imgUrl="/public/assets/garden.jpg"
-        title= "Welcome to"
-        subtitle="A simple guide to British growing"
+        imgUrl="/assets/garden.jpg"
+        title="Welcome"
+        subtitle="to my guide to british growing"
       />
 
       <Content>
@@ -33,9 +35,19 @@ export default function Home() {
 
           <Topics />
 
+
+         <div className="hidden md:block">
+          <button
+              className="bg-green-800 px-2 py-1"
+              onClick={handleClick}
+            >
+              Click me!!!
+            </button>
+         </div>
         </div>
       </Content>
       
-      <Footer href="/vegetables" title="Vegetables page" />
+      <Footer href="/vegetables" title="Vegetabless page" />
     </div>
   )
+}
