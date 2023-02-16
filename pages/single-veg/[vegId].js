@@ -1,7 +1,7 @@
-import Hero from "@/components/home/hero";
-import Content from "@/components/shared/content";
-import Footer from "@/components/shared/footer";
-import Header from "@/components/shared/header";
+import Hero from "/components/home/hero";
+import Content from "/components/shared/content";
+import Footer from "/components/shared/footer";
+import Header from "/components/shared/header";
 import { useRouter } from "next/router"
 import { useEffect, useState } from "react";
 

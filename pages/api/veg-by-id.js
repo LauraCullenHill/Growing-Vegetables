@@ -12,7 +12,7 @@ export default async function handler(req, res) {
     // ?id=1
 
     const vegs = await sql `
-        select * from veg
+        select * from vegs
         where id = ${id}
     `;
 
