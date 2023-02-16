@@ -1,7 +1,7 @@
-import VegsGrid from "@/components/vegs/veg-grid";
-import Content from "@/components/shared/content";
-import Footer from "@/components/shared/footer";
-import Header from "@/components/shared/header";
+import VegsGrid from "/components/vegs/veg-grid";
+import Content from "/components/shared/content";
+import Footer from "/components/shared/footer";
+import Header from "/components/shared/header";
 
 export default function VegsPage() {
     return (
@@ -10,7 +10,7 @@ export default function VegsPage() {
 
             <Content>
                 <div className="w-full max-w-6xl mx-auto mt-8">
-                    <VegsGrid />
+                    <VegsGrid/>
                 </div>
             </Content>
 
