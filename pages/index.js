@@ -16,8 +16,8 @@ export default function Home() {
 
     // make API call
 
-    router.push("/vegs");
-    // navigate to the books page
+    router.push("/vegetables");
+    // navigate to the vegetabless page
   }
 
   return (
@@ -41,7 +41,7 @@ export default function Home() {
               className="bg-green-800 px-2 py-1"
               onClick={handleClick}
             >
-              Click me!!!
+              Welcome
             </button>
          </div>
         </div>
