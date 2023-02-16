@@ -28,7 +28,7 @@ export default function Home() {
         subtitle="A simple guide to British growing" />
 
       <Hero
-        imgUrl="/assets/garden.jpg"
+        imgUrl="/public/assets/garden.jpg"
       />
 
       <Content>
