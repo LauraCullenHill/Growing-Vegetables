@@ -24,12 +24,11 @@ export default function Home() {
 
   return (
     <div className="w-full">
-      <Header name="Home" />
+      <Header title="Grow Your Own"
+        subtitle="A simple guide to British growing" />
 
       <Hero
-        imgUrl="/assets/profile.jpg"
-        title="Grow Your Own"
-        subtitle="A simple guide to British growing"
+        imgUrl="/assets/garden.jpg"
       />
 
       <Content>

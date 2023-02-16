@@ -6,7 +6,7 @@ import Header from "/components/shared/header";
 export default function VegsPage() {
     return (
         <div className="w-full">
-            <Header name="Vegs" />
+            <Header name="Vegetables" />
 
             <Content>
                 <div className="w-full max-w-6xl mx-auto mt-8">
