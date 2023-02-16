@@ -4,7 +4,6 @@ import Footer from "@/components/shared/footer";
 import Header from "@/components/shared/header";
 import { useRouter } from "next/router"
 import { useEffect, useState } from "react";
-import { CopyToClipboard } from 'react-copy-to-clipboard';
 
 export default function SingleVeg() {
     const router = useRouter();
