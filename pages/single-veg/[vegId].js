@@ -4,11 +4,12 @@ import Footer from "@/components/shared/footer";
 import Header from "@/components/shared/header";
 import { useRouter } from "next/router"
 import { useEffect, useState } from "react";
+import { CopyToClipboard } from 'react-copy-to-clipboard';
 
 export default function SingleVeg() {
     const router = useRouter();
-    const [veg, setVeg] = useState(null);
-    const { vegId } = router.query;
+    const [book, setBook] = useState(null);
+    const { bookId } = router.query;
     
     useEffect(() => {
         if (!vegId) return;
@@ -20,7 +21,7 @@ export default function SingleVeg() {
         const response = await fetch(`/api/veg-by-id?id=${id}`);
         const data = await response.json();
         const { veg } = data;
-        setVeg(veg);
+        setBook(veg);
     }
 
     console.log(veg);
@@ -33,11 +34,11 @@ export default function SingleVeg() {
     
 
     return (
-        <div className="w-full">
+        <div className="w-full font-manrope">
             <Header name={veg.type} />
 
             <Hero
-                imgUrl={veg.img_url}
+                imgUrl={veg.imgurl}
                 title={veg.type}
                 subtitle={veg.variety}
             />
@@ -48,23 +49,23 @@ export default function SingleVeg() {
                     <div className="">
                         <CopyToClipboard text={veg.linkToPurchase}>
                             <button
-                                className="bg-white-500 text-black px-4 py-2 rounded-lg"
+                                className="bg-green text-white font-manrope px-4 py-2 rounded-lg"
                                 type="button"
                             >
-                                Copy link to Purchase
+                                Copy link to Amazon
                             </button>
                         </CopyToClipboard>
                     </div>
 
                     <a href={veg.linkToPurchase} target="_blank">
-                        Buy online
+                        Buy seeds
                     </a>
 
                 </div>
             </Content>
 
             <Footer
-                title="Next veg"
+                title="Next vegetable"
                 href={`/single-veg/${+veg.id + 1}`}
             />
         </div>
