@@ -24,11 +24,12 @@ export default function Home() {
 
   return (
     <div className="w-full">
-      <Header title="Grow Your Own"
-        subtitle="A simple guide to British growing" />
+      <Header name="Home" />
 
       <Hero
         imgUrl="/public/assets/garden.jpg"
+        title="Grow Your Own"
+        subtitle="A simple guide to British growing"
       />
 
       <Content>
@@ -36,15 +37,6 @@ export default function Home() {
 
           <Topics />
 
-
-         <div>
-          <button
-              className="bg-green-800 px-2 py-1 rounded"
-              onClick={handleClick}
-            >
-              Click me!!!
-            </button>
-         </div>
         </div>
       </Content>
       
