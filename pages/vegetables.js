@@ -2,6 +2,7 @@ import VegGrid from "/components/vegs/veg-grid";
 import Content from "/components/shared/content";
 import Footer from "/components/shared/footer";
 import Header from "/components/shared/header";
+import Link from "next/link";
 
 export default function VegsPage() {
     return (
@@ -14,7 +15,7 @@ export default function VegsPage() {
                 </div>
             </Content>
 
-            <Footer title="Home Page" href="/" />
+            <Footer title="Home" href="/" />
         </div>
     );
 }

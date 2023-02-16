@@ -20,7 +20,7 @@ export default function SingleVeg() {
         const response = await fetch(`/api/veg-by-id?id=${id}`);
         const data = await response.json();
         const { veg } = data;
-        setBook(veg);
+        setVeg(veg);
     }
 
     console.log(veg);
@@ -51,7 +51,7 @@ export default function SingleVeg() {
                                 className="bg-green text-white font-manrope px-4 py-2 rounded-lg"
                                 type="button"
                             >
-                                Copy link to Amazon
+                                Copy link to buy seeds
                             </button>
                         </CopyToClipboard>
                     </div>
