@@ -1,4 +1,4 @@
-import sql from "@/components/utils/postgres";
+import sql from "/components/utils/postgres";
 
 export default async function handler(req, res) {
     const id = req.query.id;
